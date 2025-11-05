@@ -19,7 +19,7 @@ const YamlLoader = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('/react-quiz-symfony/public/data/controllers/the_cookies.yaml') // Place YAML in /public or use full URL
+        fetch('/react-quiz-symfony/data/controllers/the_cookies.yaml') // Place YAML in /public or use full URL
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
