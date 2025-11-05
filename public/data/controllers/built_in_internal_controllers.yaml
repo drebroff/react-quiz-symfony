@@ -1,0 +1,17 @@
+questions:
+  -
+    uuid: 1eebf878-8b9f-61f8-9d15-99d84c92580c
+    question: 'Which controller allows to render a template without a specific controller with the routing.aml file ?'
+    answers:
+      - { value: 'Symfony\Bundle\FrameworkBundle\Controller\TemplateController', correct: true }
+      - { value: 'Sensio\Bundle\FrameworkExtraBundle\Controller\TemplateController', correct: false }
+      - { value: 'Symfony\Bundle\FrameworkBundle\Controller\TwigController', correct: false }
+      - { value: 'Sensio\Bundle\FrameworkExtraBundle\Controller\TwigController', correct: false }
+    help: 'https://symfony.com/doc/7.0/templates.html#rendering-a-template-directly-from-a-route'
+  -
+    uuid: 1ef65da6-c3df-611a-a297-cbefde6d45ba
+    question: 'In a Symfony controller, does the order of method arguments affect how Symfony maps route parameters?'
+    answers:
+      - { value: 'Yes, the order of arguments must exactly match the order of parameters in the route.', correct: false }
+      - { value: 'No, Symfony maps route parameters to method arguments based on their names.', correct: true }
+    help: 'https://symfony.com/doc/7.0/controller.html#route-parameters-as-controller-arguments'
